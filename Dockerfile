@@ -1,6 +1,7 @@
 FROM codercom/code-server
 MAINTAINER cx2 choephix2@gmail.com
 WORKDIR /
+ENV BOB →
 RUN apt update
 RUN apt upgrade
 RUN apt install -y \
