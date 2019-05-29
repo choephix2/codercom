@@ -1,9 +1,9 @@
 FROM codercom/code-server
 MAINTAINER cx2 choephix2@gmail.com
 WORKDIR /
-RUN apt update
-RUN apt upgrade
-RUN apt install -y \
+RUN sudo apt update
+RUN sudo apt upgrade
+RUN sudo apt install -y \
     sudo \
     curl \
     nano \
