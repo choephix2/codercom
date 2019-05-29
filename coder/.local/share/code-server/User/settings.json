@@ -1,0 +1,34 @@
+{
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "workbench.colorTheme": "Happy Hipster",
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "terminal.integrated.shell.linux": "/usr/bin/tmux",
+    "workbench.colorCustomizations" : {
+        "terminal.background":"#1b2931",
+        "terminal.foreground":"#D0D0D0",
+        "terminalCursor.background":"#D0D0D0",
+        "terminalCursor.foreground":"#D0D0D0",
+        "terminal.ansiBlack":"#000000",
+        "terminal.ansiBlue":"#084e83",
+        "terminal.ansiBrightBlack":"#505050",
+        "terminal.ansiBrightBlue":"#2e8dd6",
+        "terminal.ansiBrightCyan":"#3fc5d1",
+        "terminal.ansiBrightGreen":"#53d867",
+        "terminal.ansiBrightMagenta":"#d63cb0",
+        "terminal.ansiBrightRed":"#ff5555",
+        "terminal.ansiBrightWhite":"#FFFFFF",
+        "terminal.ansiBrightYellow":"#f7d54d",
+        "terminal.ansiCyan":"#1d828b",
+        "terminal.ansiGreen":"#00a018",
+        "terminal.ansiMagenta":"#9c2980",
+        "terminal.ansiRed":"#8f0d2d",
+        "terminal.ansiWhite":"#D0D0D0",
+        "terminal.ansiYellow":"#af8e0a"
+    },
+    "colorize.languages": [
+        "json",
+        "javascript"
+    ],
+    "terminal.integrated.fontSize": 12
+}
