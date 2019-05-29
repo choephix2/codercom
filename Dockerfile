@@ -3,7 +3,7 @@ MAINTAINER cx2 choephix2@gmail.com
 WORKDIR /
 ENV BOB →
 RUN sudo apt update
-RUN sudo apt upgrade
+RUN sudo apt upgrade -y
 RUN sudo apt install -y \
     sudo \
     curl \
