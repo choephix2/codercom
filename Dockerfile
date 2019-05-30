@@ -23,6 +23,7 @@ RUN git config --global user.name "$GIT_USER_NAME"
 RUN git clone https://choephix2:lJaX0356@github.com/choephix2/codercom.git /ini
 #### TODO: make ssh ^ ^ ^ ^
 
+RUN sudo mkdir -p /home/coder/.local/share/code-server/User/
 RUN sudo chmod -R 777 /home/coder
 RUN sudo chmod -R 777 /root
 RUN sudo ln -sf /ini/root/.bashrc /root/.bashrc
