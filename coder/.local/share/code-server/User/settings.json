@@ -1,9 +1,15 @@
 {
+    "files.enableTrash": false,
     "editor.minimap.enabled": false,
-    "git.enableSmartCommit": true,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
     "workbench.colorTheme": "Happy Hipster",
-    "terminal.integrated.fontFamily": "Menlo for Powerline",
-    "terminal.integrated.shell.linux": "/usr/bin/tmux",
+    "workbench.panel.defaultLocation": "right",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.highlightModifiedTabs": true,
     "workbench.colorCustomizations" : {
         "terminal.background":"#1b2931",
         "terminal.foreground":"#D0D0D0",
@@ -26,9 +32,11 @@
         "terminal.ansiWhite":"#D0D0D0",
         "terminal.ansiYellow":"#af8e0a"
     },
-    "colorize.languages": [
-        "json",
-        "javascript"
-    ],
-    "terminal.integrated.fontSize": 12
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.shell.linux": "/usr/bin/tmux",
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.cursorBlinking": true,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
 }
