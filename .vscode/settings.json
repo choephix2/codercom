@@ -1,7 +1,7 @@
 {
     "workbench.colorCustomizations" : {
         "terminal.background":"#1b2231",
-        "statusBar.background":"#2a3346"
+        "statusBar.background":"#151718"
     },
     "explorer.confirmDelete": false
 }
