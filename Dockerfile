@@ -14,7 +14,7 @@ ENV GIT_USER_NAME "The Nameless One"
 RUN sudo apt update
 RUN sudo apt install -y --no-install-recommends apt-utils
 RUN sudo apt upgrade -y
-RUN sudo apt install -y --force-yes sudo curl nano git tmux 
+RUN sudo apt install -y sudo curl nano git tmux 
 
 RUN sudo mkdir /ini
 RUN sudo chmod -R 777 /ini
