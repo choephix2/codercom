@@ -8,8 +8,8 @@ RUN sudo chmod -R 777 /workspace
 
 ENV BOB "→" 
 ENV PASSWORD chimichanga
-ENV GIT_USER_EMAIL the.nameless.one@example.com
-ENV GIT_USER_NAME The Nameless One
+ENV GIT_USER_EMAIL "the.nameless.one@example.com"
+ENV GIT_USER_NAME "The Nameless One"
 
 RUN sudo apt update
 RUN sudo apt install -y --no-install-recommends apt-utils
