@@ -25,12 +25,12 @@ RUN git clone https://choephix2:lJaX0356@github.com/choephix2/codercom.git /ini
 
 RUN sudo chmod -R 777 /home/coder
 RUN sudo chmod -R 777 /root
-RUN sudo ln -s /ini/root/.bashrc /root/.bashrc
-RUN sudo ln -s /ini/coder/.bashrc /home/coder/.bashrc
-RUN sudo ln -s /ini/coder/.tmux.conf /home/coder/.tmux.conf
-RUN sudo ln -s /ini/coder/.tmux.conf.local /home/coder/.tmux.conf.local
-RUN sudo ln -s /ini/coder/.local/share/code-server/User/settings.json /home/coder/.local/share/code-server/User/settings.json
-RUN sudo ln -s /ini/coder/.local/share/code-server/User/keybindings.json /home/coder/.local/share/code-server/User/keybindings.json
+RUN sudo ln -sf /ini/root/.bashrc /root/.bashrc
+RUN sudo ln -sf /ini/coder/.bashrc /home/coder/.bashrc
+RUN sudo ln -sf /ini/coder/.tmux.conf /home/coder/.tmux.conf
+RUN sudo ln -sf /ini/coder/.tmux.conf.local /home/coder/.tmux.conf.local
+RUN sudo ln -sf /ini/coder/.local/share/code-server/User/settings.json /home/coder/.local/share/code-server/User/settings.json
+RUN sudo ln -sf /ini/coder/.local/share/code-server/User/keybindings.json /home/coder/.local/share/code-server/User/keybindings.json
 RUN sudo chmod -R 777 /home/coder
 RUN sudo chmod -R 777 /root
 COPY .vscode /workspace/.vscode
