@@ -5,7 +5,6 @@ WORKDIR /workspace
 VOLUME ["/workspace"]
 RUN sudo chmod -R 777 /workspace
 
-
 ENV BOB "→"
 ENV BOB_COLOR 33
 ENV PASSWORD chimichanga
@@ -42,4 +41,6 @@ EXPOSE 8443
 EXPOSE 8080
 EXPOSE 22
 
-## CMD ["code-server","--allow-http","--no-auth"]
+# ENTRYPOINT ["/bin/bash","/ini/onentrypoint.sh"]
+
+CMD ["--allow-http"]
