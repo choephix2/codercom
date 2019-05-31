@@ -14,12 +14,12 @@ echo "Project files located in $project_path" && \
 echo "Container will be named $container_name" && \
 sudo docker run -dit \
 --restart unless-stopped --privileged \
---name $container_name \
---hostname $project_name \
+--name "$container_name" \
+--hostname "$project_name" \
 -e PUID=1000 -e PGID=1000 -e TZ=Europe/Sofia \
--e BOB=${bob} -e BOB_COLOR=${bob_color} \
--e GIT_USER_EMAIL=${git_user_email} \
--e GIT_USER_NAME=${git_user_name} \
+-e BOB="${bob}" -e BOB_COLOR=${bob_color} \
+-e GIT_USER_EMAIL="${git_user_email}" \
+-e GIT_USER_NAME="${git_user_name}" \
 -p 0.0.0.0:${port_prefix}00:8443 \
 -p 0.0.0.0:${port_prefix}80:80 \
 -p 0.0.0.0:${port_prefix}81:81 \
@@ -35,6 +35,6 @@ sudo docker run -dit \
 -p 0.0.0.0:${port_prefix}92:9200 \
 -p 0.0.0.0:${port_prefix}93:9300 \
 -p 0.0.0.0:${port_prefix}22:22 \
--v ${project_path}:/workspace \
--v ${extensions_path}:/vscode/extensions \
+-v "${project_path}":/workspace \
+-v "${extensions_path}":/vscode/extensions \
 codercom/code-server:latest --allow-http
