@@ -4,16 +4,12 @@ read -e -p "Enter Project Name (folder will be mounted to \"/projects/<name>\"):
 read -e -p "Bob symbol? (default is '→'): " -i "→" bob
 read -e -p "Git user name? " -i "choephix2" git_user_name
 read -e -p "Git user email? " -i "choephix2@gmail.com" git_user_email
-
 bob_color=93
-
 project_path="/projects/$project_name"
 container_name="coder-$project_name"
 extensions_path="/vscode/extensions"
-
 echo "Project files located in $project_path"
 echo "Container will be named $container_name"
-
 sudo docker run -dit \
 --restart unless-stopped --privileged \
 --name $container_name \
