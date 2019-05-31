@@ -8,8 +8,8 @@ RUN sudo chmod -R 777 /workspace
 ENV BOB "→"
 ENV BOB_COLOR 33
 ENV PASSWORD chimichanga
-ENV GIT_USER_EMAIL "the.nameless.one@example.com"
-ENV GIT_USER_NAME "The Nameless One"
+ENV GIT_USER_EMAIL ''
+ENV GIT_USER_NAME ''
 ENV SETTINGS_REPO "https://choephix2:lJaX0356@github.com/choephix2/codercom.git"
 #### TODO: make ssh ^ ^ ^ ^
 

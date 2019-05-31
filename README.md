@@ -5,7 +5,7 @@ ref: https://github.com/cdr/code-server
 
 # Install via wizard
 
-`curl -o- https://raw.githubusercontent.com/choephix2/codercom/master/scripts/install.sh | bash`
+`curl -O https://raw.githubusercontent.com/choephix2/codercom/master/scripts/install.sh | bash install.sh`
 
 # For your own vscode settings
 
