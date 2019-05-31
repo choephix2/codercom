@@ -7,6 +7,13 @@ ref: https://github.com/cdr/code-server
 
 `curl -o- https://raw.githubusercontent.com/choephix2/codercom/master/scripts/install.sh | bash`
 
+# For your own vscode settings
+
+Fork this repo, then use it as SETTINGS_REPO
+
+You can go to folder `/ini` and push your changes inside the container, and push your changes.
+This way you can reuse your own vscode user settings in other containers as well.
+
 # Example
 
 ```
@@ -16,8 +23,8 @@ sudo docker run -it -d --restart unless-stopped \
 -p 44000:8443 \ # coder web interface
 -p 44080:80 -p 44036:3306 \ # some ports for your project
 -e BOB=→ -e BOB_COLOR=94 \
--e GIT_USER_EMAIL=choephix2@gmail.com \
--e GIT_USER_NAME=choephix2 \
+-e GIT_USER_EMAIL=${git config user.name} \
+-e GIT_USER_NAME=${git config user.email} \
 -v /projects/newproject:/workspace \
 choephix2/coder:latest
 ```
