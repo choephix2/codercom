@@ -5,7 +5,7 @@ ref: https://github.com/cdr/code-server
 
 # Install via wizard
 
-`curl -O- https://raw.githubusercontent.com/choephix2/codercom/master/scripts/wizard.sh | bash`
+`curl -o- https://raw.githubusercontent.com/choephix2/codercom/master/scripts/install.sh | bash`
 
 # Example
 
@@ -18,7 +18,7 @@ sudo docker run -it -d --restart unless-stopped \
 -e BOB=→ -e BOB_COLOR=94 \
 -e GIT_USER_EMAIL=choephix2@gmail.com \
 -e GIT_USER_NAME=choephix2 \
--v /projects/newproject:/workspace
+-v /projects/newproject:/workspace \
 choephix2/coder:latest
 ```
 

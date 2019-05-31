@@ -14,7 +14,7 @@ extensions_path="/vscode/extensions"
 echo "Project files located in $project_path"
 echo "Container will be named $container_name"
 
-docker run -dit \
+sudo docker run -dit \
 --restart unless-stopped --privileged \
 --name $container_name \
 --hostname $project_name \
