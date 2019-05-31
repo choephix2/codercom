@@ -1,17 +1,27 @@
 #! /bin/bash
-read -p "Enter Project Name (will match folder \"project-<name>\"): " project_name
-read -p "Enter Project Port Prefix (e.g. 441, 442...): " port_prefix
+read -e -p "Enter Project Port Prefix (e.g. 441, 442...): " -i 441 port_prefix
+read -e -p "Enter Project Name (folder will be mounted to \"/projects/<name>\"): " -i "newproject" project_name
+read -e -p "Bob symbol? (default is '→'): " -i "→" bob
+read -e -p "Git user name? " -i "choephix2" git_user_name
+read -e -p "Git user email? " -i "choephix2@gmail.com" git_user_email
+
+bob_color=93
 
 project_path="/projects/$project_name"
 container_name="coder-$project_name"
-
-extensions_path="/home/coder/vscode-extensions"
+extensions_path="/vscode/extensions"
 
 echo "Project files located in $project_path"
 echo "Container will be named $container_name"
 
 docker run -dit \
+--restart unless-stopped --privileged \
+--name $container_name \
+--hostname $project_name \
 -e PUID=1000 -e PGID=1000 -e TZ=Europe/Sofia \
+-e BOB=${bob} -e BOB_COLOR=${bob_color} \
+-e GIT_USER_EMAIL=${git_user_email} \
+-e GIT_USER_NAME=${git_user_name} \
 -p 0.0.0.0:${port_prefix}00:8443 \
 -p 0.0.0.0:${port_prefix}80:80 \
 -p 0.0.0.0:${port_prefix}81:81 \
@@ -29,7 +39,4 @@ docker run -dit \
 -p 0.0.0.0:${port_prefix}22:22 \
 -v ${project_path}:/workspace \
 -v ${extensions_path}:/vscode/extensions \
---restart unless-stopped --privileged \
---hostname vm \
---name $container_name \
 codercom/code-server:latest --allow-http
