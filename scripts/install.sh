@@ -1,9 +1,11 @@
 #! /bin/bash
+git_user_name=$(git config user.name || '')
+git_user_email=$(git config user.email || '')
 read -e -p "Enter Project Port Prefix (e.g. 401, 402...): " -i 401 port_prefix
 read -e -p "Enter Project Name (folder will be mounted to \"/projects/<name>\"): " project_name
 read -e -p "Bob symbol?" -i "→" bob
-read -e -p "Git user name? " -i $(git config user.name)|'' git_user_name
-read -e -p "Git user email? " -i $(git config user.name)|'' git_user_email
+read -e -p "Git user name? " -i $git_user_name git_user_name
+read -e -p "Git user email? " -i $git_user_emali git_user_emali
 bob_color=93
 project_path="/projects/$project_name"
 container_name="coder-$project_name"
