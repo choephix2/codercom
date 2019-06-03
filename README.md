@@ -16,15 +16,19 @@ This way you can reuse your own vscode user settings in other containers as well
 
 # Example
 
+Before copying, change the password and the project path.
+
 ```
-sudo docker run -it -d --restart unless-stopped \
+sudo docker run -it -d \
+--restart unless-stopped \
 --name coder-blankslate \
 --hostname blankslate \
--p 44000:8443 \ # coder web interface
--p 44080:80 -p 44036:3306 \ # some ports for your project
+-p 44000:8443 \
+-p 44080:80 -p 44036:3306 \
 -e BOB=→ -e BOB_COLOR=94 \
--e GIT_USER_EMAIL=$(git config user.name) \
--e GIT_USER_NAME=$(git config user.email) \
+-e GIT_USER_EMAIL="$(git config user.name)" \
+-e GIT_USER_NAME="$(git config user.email)" \
+-e PASSWORD="chimichanga" \
 -v /projects/newproject:/workspace \
 choephix2/coder:latest
 ```
