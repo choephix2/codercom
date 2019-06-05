@@ -21,11 +21,12 @@ Before copying, change the password and the project path.
 ```
 sudo docker run -it -d \
 --restart unless-stopped \
---name coder-blankslate \
---hostname blankslate \
+--name coder-newproject \
+--hostname newproject \
 -p 44000:8443 \
--p 44080:80 -p 44036:3306 \
--e BOB=→ -e BOB_COLOR=94 \
+-p 44080:80 \
+-p 44036:3306 \
+-e BOB=→ -e BOB_COLOR=93 \
 -e GIT_USER_EMAIL="$(git config user.name)" \
 -e GIT_USER_NAME="$(git config user.email)" \
 -e PASSWORD="chimichanga" \
