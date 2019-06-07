@@ -7,5 +7,5 @@ if [ $AUTOPULL_SETTINGS = true ] ; then
   echo "Automatically pulling settings at startup"
   cd /ini
   git pull
-fi || \
-dumb-init code-server --allow-http
+fi ; \
+dumb-init code-server
