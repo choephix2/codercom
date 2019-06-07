@@ -4,8 +4,10 @@ git config --global user.name "$GIT_USER_NAME" ; \
 sudo chmod -R 777 /home/coder ; \
 sudo chmod -R 777 /ini ; \
 if [ $AUTOPULL_SETTINGS = true ] ; then
-  echo "Automatically pulling settings at startup"
+  echo "Startup update: Automatically pulling settings"
   cd /ini
   git pull
-fi ; \
+fi || true
+echo "Staring code-server..."
+code-server --help
 dumb-init code-server
