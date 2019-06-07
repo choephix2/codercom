@@ -27,16 +27,25 @@ sudo docker run -it -d \
 -p 44080:80 \
 -p 44036:3306 \
 -e BOB=→ -e BOB_COLOR=93 \
--e GIT_USER_EMAIL="$(git config user.name)" \
--e GIT_USER_NAME="$(git config user.email)" \
+-e GIT_USER_EMAIL="$(git config user.email)" \
+-e GIT_USER_NAME="$(git config user.name)" \
 -e PASSWORD="chimichanga" \
 -v /projects/newproject:/workspace \
 choephix2/coder:latest
 ```
 
 ## BOB Suggestions :)
-### `→ ♦ ♥ ♣ ♠ ● ► ◊ ○ ♪ ♫ ♯`
-### `■ ▪ □ ▫ ▬ ─ ☻ ☺ ⌂ ∆ † ‽`
-### `∞ √ ≈ ≡ └ › • ‼ » © ® °`
-### `◦ ꞊ ▬ › µ ¶ § ˃ · ∑ ∫ ∂`
-### BOB_COLOR: *<span style="color:red">91</span> <span style="color:green">92</span> <span style="color:yellow">93</span> <span style="color:blue">94</span> <span style="color:magenta">95</span> <span style="color:cyan">96</span>*
+### `→ ● ► ♦ ♥ ♣ ♠ ○ ◊ ♪ ♫ ♯`
+### `˃ › » ◦ · • √ ≈ ≡ ∞ ☻ ☺`
+### `■ ▪ □ ▫ ▬ ▬ ─ ꞊ └ © ® °`
+### `‼ µ ¶ § ∑ ∫ ∂ ⌂ ∆ † ‽ ¢`
+### `✶ ♀ ♂ ⸗ ⱻ ⱺ ﬁ ﬂ ﬀ ﬕ ﬗ ﬔ`
+### `Ɱ Ɐ ≠ ℗ ₿ ₡ ₤ ₲ ₰ ₷ ₳ ⱷ`
+## BOB_COLOR: 
+### 91 (red)
+### 92 (green)
+### 93 (yellow)
+### 94 (blue)
+### 95 (magenta)
+### 96 (cyan)
+### 97 (white)
