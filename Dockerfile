@@ -42,5 +42,3 @@ COPY .vscode $WORKSPACE/.vscode
 EXPOSE 8443
 
 ENTRYPOINT ["/bin/bash","/ini/entrypoint.sh"]
-
-CMD ["--allow-http"]
