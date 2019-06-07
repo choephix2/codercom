@@ -6,7 +6,6 @@
     "editor.tabSize": 2,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
-    "workbench.colorTheme": "Happy Hipster",
     "workbench.panel.defaultLocation": "right",
     "workbench.statusBar.feedback.visible": false,
     "workbench.editor.highlightModifiedTabs": true,
@@ -33,8 +32,7 @@
         "terminal.ansiYellow":"#af8e0a"
     },
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.shell.linux": "/usr/bin/tmux",
-    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "terminal.integrated.fontFamily": "\"Menlo for Powerline\", \"Lucida Console\", monospace",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.cursorBlinking": true,
     "git.enableSmartCommit": true,
