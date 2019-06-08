@@ -6,4 +6,4 @@ if [ $AUTOPULL_SETTINGS = true ] ; then
   git -c /ini pull
 fi || true
 echo - - - - - -
-bash onboot.sh
+bash /ini/onboot.sh
