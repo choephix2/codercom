@@ -1,6 +1,6 @@
 FROM choephix2/coder
 
-RUN apt-get install -y python3 python3-pip
+RUN sudo apt-get install -y python3 python3-pip
 RUN sudo pip3 install pylint
 
 RUN code-server --install-extension ms-python.python
