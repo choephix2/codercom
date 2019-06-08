@@ -5,9 +5,8 @@ sudo chmod -R 777 /home/coder ; \
 sudo chmod -R 777 /ini ; \
 if [ $AUTOPULL_SETTINGS = true ] ; then
   echo "Startup update: Automatically pulling settings"
-  cd /ini
-  git pull
+  git -c /ini pull
 fi || true
 echo "Staring code-server..."
 code-server --help
-dumb-init code-server
+dumb-init code-server --disable-telemetry --allow-http
