@@ -19,7 +19,8 @@ This way you can reuse your own vscode user settings in other containers as well
 Before copying, change the password and the project path.
 
 ```
-sudo docker run -it -d \
+sudo docker pull choephix2/coder:latest
+sudo docker run -itd --privileged \
 --restart unless-stopped \
 --name coder-newproject \
 --hostname newproject \
@@ -30,7 +31,7 @@ sudo docker run -it -d \
 -e GIT_USER_EMAIL="$(git config user.email)" \
 -e GIT_USER_NAME="$(git config user.name)" \
 -e PASSWORD="chimichanga" \
--v /projects/newproject:/workspace \
+-v /projects/newproject:/home/coder/project \
 choephix2/coder:latest
 ```
 
