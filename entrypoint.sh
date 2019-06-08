@@ -7,6 +7,14 @@ if [ $AUTOPULL_SETTINGS = true ] ; then
   echo "Startup update: Automatically pulling settings"
   git -c /ini pull
 fi || true
+echo - - - - - -
+echo - - - - - -
+cat /ini/Dockerfile
+echo - - - - - -
+echo - - - - - -
+cat /ini/entrypoint.sh
+echo - - - - - -
+echo - - - - - -
 echo "Staring code-server..."
 code-server --help
 dumb-init code-server --disable-telemetry --allow-http
