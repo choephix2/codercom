@@ -1,10 +1,8 @@
 FROM codercom/code-server
 MAINTAINER cx2 choephix2@gmail.com
 
-ARG WORKSPACE="/home/coder/project"
+ENV WORKSPACE="/home/coder/project"
 # really wish it can be /workspace ^ ^ ^ ^
-
-VOLUME [$WORKSPACE]
 
 RUN sudo chmod -R 777 $WORKSPACE
 WORKDIR $WORKSPACE
@@ -38,6 +36,7 @@ RUN sudo ln -sf /ini/coder/.local/share/code-server/User/settings.json /home/cod
 RUN sudo ln -sf /ini/coder/.local/share/code-server/User/keybindings.json /home/coder/.local/share/code-server/User/keybindings.json
 
 COPY .vscode $WORKSPACE/.vscode
+COPY entrypoint.sh ini/entrypoint.sh
 
 EXPOSE 8443
 
