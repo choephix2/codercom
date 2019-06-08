@@ -5,5 +5,6 @@
         "statusBar.foreground":"#ddefff",
         "statusBar.background":"#114a7c"
     },
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "files.eol": "\n"
 }
