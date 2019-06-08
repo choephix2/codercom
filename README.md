@@ -7,7 +7,7 @@ ref: https://github.com/cdr/code-server
 
 `curl -O https://raw.githubusercontent.com/choephix2/codercom/master/scripts/install.sh && bash install.sh`
 
-`curl -O https://raw.githubusercontent.com/choephix2/codercom/master/scripts/install.oneport.sh && bash install.sh`
+`curl -O https://raw.githubusercontent.com/choephix2/codercom/master/scripts/install.oneport.sh && bash install.oneport.sh`
 
 # For your own vscode settings
 
