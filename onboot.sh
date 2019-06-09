@@ -15,6 +15,7 @@ then
   AUTH_OPTION='--no-auth'
 else
   AUTH_OPTION=''
+fi
 
 echo "Staring code-server..."
 code-server --help
