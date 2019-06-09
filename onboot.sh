@@ -10,7 +10,8 @@ sudo ln -sf /ini/coder/.tmux.conf.local /home/coder/.tmux.conf.local
 sudo ln -sf /ini/coder/.local/share/code-server/User/settings.json /home/coder/.local/share/code-server/User/settings.json
 sudo ln -sf /ini/coder/.local/share/code-server/User/keybindings.json /home/coder/.local/share/code-server/User/keybindings.json
 
-if [[ -ez $PASSWORD ]] 
+if [[ -z $PASSWORD ]] 
+then
   AUTH_OPTION='--no-auth'
 else
   AUTH_OPTION=''
