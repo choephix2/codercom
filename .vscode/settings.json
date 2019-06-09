@@ -1,10 +1,17 @@
 {
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true,
+    "files.enableTrash": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontFamily": "\"Menlo for Powerline\", \"Lucida Console\", monospace",
+    "terminal.integrated.fontSize": 12,
     "workbench.colorCustomizations" : {
-        "terminal.foreground":"#b6e5f8",
-        "terminal.background":"#1b2231",
-        "statusBar.foreground":"#ddefff",
-        "statusBar.background":"#114a7c"
-    },
-    "explorer.confirmDelete": false,
-    "files.eol": "\n"
+        // "terminal.foreground":"#b6e5f8",
+        // "terminal.background":"#1b2231",
+        // "statusBar.foreground":"#ddefff",
+        // "statusBar.background":"#114a7c"
+    }
 }
