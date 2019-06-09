@@ -5,7 +5,7 @@ ref: https://github.com/cdr/code-server
 
 # Install via wizard
 
-`curl -O https://raw.githubusercontent.com/choephix2/codercom/master/scripts/addcoder.sh && bash addcoder.sh -c -p`
+`curl -O https://raw.githubusercontent.com/choephix2/codercom/master/addcoder.sh && bash addcoder.sh -c -p`
 
 # For your own vscode settings
 

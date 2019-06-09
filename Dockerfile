@@ -31,6 +31,6 @@ COPY .vscode $WORKSPACE/.vscode
 
 EXPOSE 8443
 
-ENTRYPOINT ["/bin/bash","/ini/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash","/ini/scripts/entrypoint.sh"]
 
-CMD ["/bin/bash"]
+CMD ["/usr/bin/tmux"]
