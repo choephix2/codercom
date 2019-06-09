@@ -7,11 +7,11 @@ ref: https://github.com/cdr/code-server
 
 `curl -O https://raw.githubusercontent.com/choephix2/codercom/master/addcoder.sh && bash addcoder.sh -c -p`
 
-# For your own vscode settings
+# For your own vscode user settings synchronization
 
-Fork this repo, then use it as SETTINGS_REPO
-
-You can go to folder `/ini` and push your changes inside the container, and push your changes.
+Fork this repo, then use `-e SETTINGS_REPO=<your fork's url>` 
+Add `-e AUTOPULL_SETTINGS=true` to pull from your repo every time the container is restarted.
+You make changes to the user *settings.json* or *keybindings.json*, and sync them to that repo, but you still have to manually push them. Do this by going to folder `/ini` inside the container, and performing commit and push.
 This way you can reuse your own vscode user settings in other containers as well.
 
 # Example
