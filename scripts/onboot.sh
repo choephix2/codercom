@@ -19,4 +19,5 @@ fi
 
 echo "Staring code-server..."
 code-server --help
+cd $WORKSPACE
 dumb-init code-server --disable-telemetry --allow-http
