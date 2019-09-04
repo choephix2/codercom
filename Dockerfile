@@ -24,6 +24,11 @@ RUN sudo apt-get install -y sudo curl nano git tmux
 RUN sudo mkdir -m 777 /ini
 RUN git clone $SETTINGS_REPO /ini
 
+RUN code-server --install-extension daylerees.rainglow
+RUN code-server --install-extension fabiospampinato.vscode-terminals
+RUN code-server --install-extension fabiospampinato.vscode-commands
+RUN code-server --install-extension actboy168.tasks
+
 RUN sudo mkdir -p /home/coder/.local/share/code-server/User/
 RUN sudo chmod -R 777 /home/coder
 
